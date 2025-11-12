@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>托马斯测试</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 头部信息 -->
+        <div class="quiz-header">
+            <h1>智能答题系统</h1>
+            
+            <!-- 进度条区域 -->
+            <div class="progress-section">
+                <div class="progress-bar">
+                    <div id="progress-fill" class="progress-fill"></div>
+                </div>
+                <div class="progress-info">
+                    <span id="question-counter">题目 <span id="current-question">1</span> / <span id="total-questions-count">0</span></span>
+                    <span id="progress-percentage">已完成 <span id="progress-percent">0</span>%</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 题目导航 -->
+        <div class="question-nav">
+            <div class="question-nav-dots" id="question-dots">
+                <!-- 这里会通过JavaScript动态生成题目导航点 -->
+            </div>
+        </div>
+        
+        <!-- 主内容区域 -->
+        <div class="quiz-main">
+            <!-- 题目分类标签 -->
+            <div id="question-categories" class="question-categories">
+                <!-- 分类标签会通过JavaScript动态生成 -->
+            </div>
+            
+            <!-- 单个题目容器 -->
+            <div id="question-container" class="question-container fade-in">
+                <!-- 题目类型标签 -->
+                <div id="question-type" class="question-type"></div>
+                
+                <!-- 题目文本 -->
+                <div id="question-text" class="question-text"></div>
+                
+                <!-- 媒体内容容器 -->
+                <div id="media-container" class="media-container hidden">
+                    <img id="question-image" src="" alt="题目图片" style="display: none;">
+                    <audio id="question-audio" controls style="display: none;"></audio>
+                </div>
+                
+                <!-- 选项容器 -->
+                <div id="options-container" class="options-container"></div>
+            </div>
+            
+            <!-- 答题操作按钮 -->
+            <div class="quiz-actions">
+                <button id="prev-btn" class="btn btn-secondary" disabled>上一题</button>
+                <button id="next-btn" class="btn btn-primary">下一题</button>
+                <button id="submit-btn" class="btn btn-success hidden">提交答案</button>
+            </div>
+        </div>
+        
+        <!-- 结果显示区域 (初始隐藏) -->
+        <div id="results-container" class="results-container hidden">
+            <div class="results-header">
+                <h2>答题完成！</h2>
+                <div class="score-summary">
+                    <p>您的得分：<span id="final-score">0</span> / <span id="result-total-questions">0</span></p>
+                    <p>正确率：<span id="score-percentage">0%</span></p>
+                </div>
+            </div>
+            
+            <div class="feedback-section">
+                <h3>答题详情</h3>
+                <div id="feedback-details" class="feedback-details">
+                    <!-- 答题详情将通过JavaScript动态生成 -->
+                </div>
+            </div>
+            
+            <div class="quiz-actions">
+                <button id="restart-btn" class="btn btn-primary">重新开始</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    <!-- 页脚信息 -->
+    <footer class="footer">
+        <p>此项目为托马斯群友自发发起的共创活动</p>
+    </footer>
+</body>
+</html>
