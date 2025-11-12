@@ -4,34 +4,183 @@ const questions = [
         id: 1,
         type: 'multiple-choice',
         typeText: '选择题',
-        text: 'HTML5的DOCTYPE声明应该放在HTML文档的哪个位置？',
+        text: '以下群友哪些不在托马斯的人生黑名单中',
         options: [
-            { id: 'a', text: '文档的最后' },
-            { id: 'b', text: '文档的中间' },
-            { id: 'c', text: '文档的最前面' },
-            { id: 'd', text: '不需要DOCTYPE声明' }
+            { id: 'a', text: 'nobu' },
+            { id: 'b', text: '阳教主' },
+            { id: 'c', text: '浮云散' },
+            { id: 'd', text: '石小凡' },
+            { id: 'f', text: 'sc' },
+            { id: 'g', text: '艾特艾特' },
+
         ],
-        correctAnswer: 'c'
+        correctAnswer: 'g'
     },
+
     {
         id: 2,
+        type: 'multiple-choice',
+        typeText: '选择题',
+        text: '托马斯加入了哪个豆瓣小组',
+        options: [
+            { id: 'a', text: '青岛租房' },
+            { id: 'b', text: '广州彩虹' },
+            { id: 'c', text: '深圳租房' },
+            { id: 'd', text: '广州二手交易' },
+
+        ],
+        correctAnswer: 'b'
+    },
+
+    {
+        id: 3,
+        type: 'multiple-choice',
+        typeText: '选择题',
+        text: '托马斯是以下哪个足球俱乐部的粉丝',
+        options: [
+            { id: 'a', text: '多特蒙德' },
+            { id: 'b', text: '莱比锡' },
+            { id: 'c', text: '阿森纳' },
+            { id: 'd', text: '曼联' },
+
+        ],
+        correctAnswer: 'd'
+    },
+
+    {
+        id: 4,
+        type: 'multiple-choice',
+        typeText: '选择题',
+        text: '托马斯最爱穿的衣服是哪个品牌的',
+        options: [
+            { id: 'a', text: '美特斯邦威' },
+            { id: 'b', text: '阿迪达斯' },
+            { id: 'c', text: '耐克' },
+            { id: 'd', text: 'lululemon' },
+
+        ],
+        correctAnswer: 'b'
+    },
+
+        {
+        id: 5,
+        type: 'multiple-choice',
+        typeText: '选择题',
+        text: '以下哪个角色是托马斯Cos过的？',
+        options: [
+            { id: 'a', text: '初音未来' },
+            { id: 'b', text: '桐谷和人' },
+            { id: 'c', text: '卡卡西' },
+            { id: 'd', text: '妈妈' },
+
+        ],
+        correctAnswer: 'd'
+    },
+
+           {
+        id: 6,
+        type: 'multiple-choice',
+        typeText: '选择题',
+        text: '托马斯曾说过“男儿膝下有黄金”，他曾经为哪位群友献出了自己的黄金？',
+        options: [
+            { id: 'a', text: '鹦鹉' },
+            { id: 'b', text: '鲸鱼' },
+            { id: 'c', text: '黑猫' },
+            { id: 'd', text: '狗' },
+
+        ],
+        correctAnswer: 'A'
+    },
+
+           {
+        id: 7,
+        type: 'multiple-choice',
+        typeText: '选择题',
+        text: '托马斯曾说过“别发你身上那一堆臭肉烂肉就行”，这里的"你"指的是？',
+        options: [
+            { id: 'a', text: '鹦鹉' },
+            { id: 'b', text: '鲸鱼' },
+            { id: 'c', text: '艾特艾特' },
+            { id: 'd', text: 'sc' },
+
+        ],
+        correctAnswer: 'C'
+    },
+
+
+    {
+        id: 8,
         type: 'media-question',
         typeText: '图片题',
-        text: '这是哪种编程语言的标志？',
+        text: '这是托马斯在哪里拍摄的照片？',
         media: {
             type: 'image',
             src: 'tp/sygh.jpg'
         },
         options: [
-            { id: 'a', text: 'JavaScript' },
-            { id: 'b', text: 'Python' },
-            { id: 'c', text: 'Java' },
-            { id: 'd', text: 'C++' }
+            { id: 'a', text: '海珠湖畔' },
+            { id: 'b', text: '疆近酒 '},
+            { id: 'c', text: '声音共和' },
+            { id: 'd', text: 'Bo live' }
         ],
-        correctAnswer: 'b'
+        correctAnswer: 'A'
     },
-    {
+
+        {
         id: 3,
+        type: 'media-question',
+        typeText: '图片题',
+        text: '图中的托马斯正在？',
+        media: {
+            type: 'image',
+            src: 'tp/fys.png'
+        },
+        options: [
+            { id: 'a', text: '追艺人要签名' },
+            { id: 'b', text: '练习室内足球'},
+            { id: 'c', text: '躲起来被妈妈找' },
+            { id: 'd', text: '惊动了浮云散后逃跑' }
+        ],
+        correctAnswer: 'B'
+    },
+        {
+        id: 10,
+        type: 'media-question',
+        typeText: '图片题',
+        text: '图示的茅台是托马斯在哪个城市喝的？',
+        media: {
+            type: 'image',
+            src: 'tp/mt.jpg'
+        },
+        options: [
+            { id: 'a', text: '珠海（海洋中心）' },
+            { id: 'b', text: '广州（声共湖畔） '},
+            { id: 'c', text: '深圳（B10隔壁）' },
+            { id: 'd', text: '青岛（亲友聚会）' }
+        ],
+        correctAnswer: 'A'
+    },
+
+      {
+        id: 11,
+        type: 'media-question',
+        typeText: '图片题',
+        text: '图中的托马斯为何抽泣？',
+        media: {
+            type: 'image',
+            src: 'tp/kq.png'
+        },
+        options: [
+            { id: 'a', text: '装的别信' },
+            { id: 'b', text: '没签到蹲的艺人 '},
+            { id: 'c', text: '石小凡扣押了34.7元' },
+            { id: 'd', text: '受委屈了' }
+        ],
+        correctAnswer: 'A'
+    },
+
+    {
+        id: 12,
         type: 'true-false',
         typeText: '判断题',
         text: 'CSS只能用于设置网页的颜色。',
@@ -42,7 +191,7 @@ const questions = [
         correctAnswer: 'b'
     },
     {
-        id: 4,
+        id: 13,
         type: 'multiple-choice',
         typeText: '选择题',
         text: 'React是什么类型的JavaScript库？',
@@ -55,7 +204,7 @@ const questions = [
         correctAnswer: 'b'
     },
     {
-        id: 5,
+        id: 14,
         type: 'media-question',
         typeText: '音频题',
         text: '请听以下音频，这是什么动物的叫声？',
@@ -72,7 +221,7 @@ const questions = [
         correctAnswer: 'c'
     },
     {
-        id: 6,
+        id: 15,
         type: 'true-false',
         typeText: '判断题',
         text: 'JavaScript是一种编译型语言。',
@@ -253,6 +402,7 @@ function showCurrentQuestion() {
         if (question.media.type === 'image') {
             questionImage.src = question.media.src;
             questionImage.style.display = 'block';
+            questionImage.style.margin = '0 auto';
             questionAudio.style.display = 'none';
         } else if (question.media.type === 'audio') {
             questionAudio.src = question.media.src;
